@@ -1,0 +1,96 @@
+#gameCanvas{
+    background-color: #e8fffa;
+    padding: 1rem;
+
+    max-height: 80%;
+    max-width: 80%;
+}
+
+#cardsArea{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1rem 1rem;
+
+    padding: 1rem;
+
+    background-color: #dadada;
+    
+    width: auto;
+    height: auto;
+    
+    min-height: 45rem;
+}
+
+.card{
+    border: 3px dashed #000000;
+
+    /*Forces to have a 1:1 aspect ratio. Neat!*/
+    padding-top: 100%;
+}
+
+.card-active{
+    /*Placeholder just to differentiate active and inactive cards*/
+}
+
+.card-active:hover{
+    animation: CardHover 0.3s linear 0s 1 alternate;
+    animation-fill-mode: forwards;
+}
+
+div.card-inactive{
+    background-color: #434343;
+}
+
+.card-trap{
+    background-color: rgb(255, 106, 19);
+}
+.card-key{
+    background-color: rgb(225, 229, 14);
+}
+.card-door{
+    background-color: aquamarine;
+}
+
+
+
+.hud{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+}
+
+#lifes{
+    font-size: 5rem;
+}
+
+.backpack-keys{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.key{
+    background-color: aquamarine;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 1rem;
+    padding: 0.5rem;
+}
+
+
+
+/*
+    Animations
+*/
+
+
+@keyframes CardHover{
+    from{transform: scale(1.00);}
+    to{
+        background-color: #596ea1;
+        border-color: white;
+        transform: scale(1.25);
+    }
+}

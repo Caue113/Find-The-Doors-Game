@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Find The Doors!</title>
+    <meta charset="UTF8">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body onload="Start()">
+    <header>
+        <h1>Encontre as Portas!</h1>
+    </header>
+
+    <main>
+        <header>
+            <h2>Regras</h2>
+            <ul>
+                <li>No tabuleiro há 20 casas. Cada casa pode conter ou uma porta, ou uma chave ou uma armadilha</li>
+                <li>Você inicia com 10 de vida</li>
+                <li>As armadilhas arrancam 3 pontos de vida</li>
+                <li>As chaves são necessárias para abrir as portas. Porém, você só pode carregar 4 chaves simultâneamente!</li>            
+                <li>Cada porta aberta te restaurará 2 pontos de vida</li>
+                <li>Você deve abrir todas as portas escondidas para ganhar.</li>
+                <li>Boa sorte!!!</li>
+            </ul>
+        </header>
+
+        <section id="gameCanvas">
+            <div id="cardsArea">
+
+            </div>
+
+            <div id="hud" class="hud">
+                <p id="lifes">Vida: <span>10/10</span></p>
+                <div id="backpack-keys" class="backpack-keys">
+                    <!--Aqui serão inseridos 4 divs representando a chave-->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
